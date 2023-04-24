@@ -1,14 +1,9 @@
+const loginForm = document.querySelector("#login-form")
+const loginInput = document.querySelector("#login-form input");
 
-handlerWindowResize = () => {
-     const bodyClass = document.body.classList
-     if(window.innerWidth >= 800){
-          bodyClass.add("resized2")
-     } else if (window.innerWidth >= 600){
-          bodyClass.add("resized")
-          bodyClass.remove("resized2")
-     } else {
-          bodyClass.remove("resized")
-     }
-};
+function onLoginSubmit (event){
+     event.preventDefault()
+     console.log(event);
+}
 
-window.addEventListener("resize", handlerWindowResize)
+loginForm.addEventListener("submit", onLoginSubmit)
