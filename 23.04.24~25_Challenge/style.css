@@ -1,0 +1,26 @@
+.firstline {
+     font-weight: bold;
+     font-size: 20px;
+}
+
+.firstnumBox {
+     height: 18px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+#Btn {
+     height: 23px;
+     font-weight: bold;
+}
+
+.hidden {
+     display: none;
+}
+
+#winAndLose {
+     font-weight: bold;
+}
