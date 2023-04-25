@@ -1,14 +1,14 @@
-const numberGame = document.querySelector("#numberGame");
+const numberGameForm = document.querySelector("#numberGameForm");
 
 const firstValue = document.querySelector("#firstNumber");
 const secondValue = document.querySelector("#secondNumber");
 
 const gameResultBox = document.querySelector("#gameResultbox");
-const gameResultMessage = document.querySelector("#result");
-const winOrLose = document.querySelector("#winAndLose");
+const gameResultMessage = document.querySelector("#resultMessage");
+const winorlose = document.querySelector("#winorlose");
 
 
-numberGame.addEventListener("submit", numberSubmitted);
+numberGameForm.addEventListener("submit", numberSubmitted);
 
 function numberSubmitted (event) {
      event.preventDefault();
@@ -27,9 +27,9 @@ function gamePlay (playerNum, machineNum) {
      gameResultBox.classList.remove("hidden")
      gameResultMessage.innerHTML = `You choose: ${playerNum}, the machine chose: ${machineNum}.`
      if(playerNum === machineNum){
-          winOrLose.innerText = "You win!";
+          winorlose.innerText = "You win!";
      } else {
-          winOrLose.innerText = "You lost!";
+          winorlose.innerText = "You lost!";
      };
 };
 
