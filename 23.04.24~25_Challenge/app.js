@@ -13,13 +13,13 @@ numberGameForm.addEventListener("submit", numberSubmitted);
 function numberSubmitted (event) {
      event.preventDefault();
      const maxNum = parseInt(firstValue.value)
-     const minNum = parseInt(secondValue.value)
-     const machineNumber = randomInt (minNum, maxNum)
-     gamePlay(minNum, machineNumber);
+     const playerNum = parseInt(secondValue.value)
+     const machineNum = randomInt (maxNum)
+     gamePlay(playerNum, machineNum);
 };
 
-function randomInt (min, max){
-     let randomNum = Math.floor(Math.random()*(max-min+1)) + min;
+function randomInt (max){
+     let randomNum = Math.floor(Math.random()*(max));
      return randomNum;
 };
 
