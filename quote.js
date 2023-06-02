@@ -16,10 +16,6 @@ const quotes = [
       author: "켄러"
       },
       {
-      quote: "행복의 문이 하나 닫히면 다른 문이 열린다 그러나 우리는 종종 닫힌 문을 멍하니 바라보다가 우리를 향해 열린 문을 보지 못하게 된다.",
-      author: "헬렌켈러"
-      },
-      {
       quote: "피할수 없으면 즐겨라.",
       author: "로버트 엘리엇"
       },
@@ -49,4 +45,4 @@ const author = document.querySelector("#quote span:last-child")
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)]
 
 quote.innerText = todaysQuote.quote
-author.innerText = todaysQuote.author
+author.innerText = "- " + todaysQuote.author
