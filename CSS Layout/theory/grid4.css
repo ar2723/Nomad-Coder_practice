@@ -1,0 +1,33 @@
+.grid {
+     display:grid;
+     height: 25vh;
+     gap: 5px;
+}
+
+.header{
+     background-color: aqua;
+
+}
+
+.content{
+     background-color: bisque;
+
+}
+
+.nav{
+     background-color: purple;
+
+}
+
+.footer{
+     background-color: orange;
+
+}
+
+.grid:nth-child(1) {
+     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid:nth-child(2) {
+     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}

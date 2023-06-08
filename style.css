@@ -4,43 +4,117 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: -1;
+      z-index: -5;
       animation: fadeIn 0.5s linear;
 }
+.hidden {
+      display: none;
+}
 
-#clock{
-      position: fixed;
-      bottom: 0;
-      left: 10%;
-      transform: translateX(-50%);
-      color:aliceblue;
-      font-size: 30px;
+body{
+      color: white;
+      height: 100vh;
+      margin: 0;
+}
+
+.container{
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: auto;
+      
+}
+
+.header{
+      display: flex;
+      justify-content: space-between;
+      font-size: 3vh;
       font-weight: bold;
+      margin: 3vh;
+      margin-left: 5vh;
+      margin-right: 5vh;
 }
 
-#weather{
-      position: fixed;
-      bottom: 0;
-      left: 90%;
-      transform: translateX(-30%);
-      font-size: 30px;
-      color:aliceblue;
-}
-
-#quote{
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
+.content{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: aliceblue;
-      font-size: 20px;
+      font-size: 3vh;
+      height: 50vh ;
 }
 
-.hidden {
-      display: none;
+.content #login-form input:nth-child(1){
+      width: 45vw;
+      height: 10vh;
+      background: none;
+      font-size: 5vh;
+      text-align: center;
+      color: white;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 3px solid white;
+      margin-bottom: 1vh;
+}
+
+h1{
+      margin-bottom: 1vh;
+}
+
+.content #todo-form input{
+      width: 40vw;
+      height: 5vh;
+      background: none;
+      font-size: 1.8vh;
+      text-align: center;
+      color: white;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      margin-bottom: 3vh;
+}
+
+.content input::placeholder{
+      color: white;
+}
+ul{
+      height: 10vh;
+}
+
+li{
+      font-size: 2vh;
+      width: 15vh;
+      list-style-type: decimal;
+      margin-bottom: 0.5vh;
+      border-bottom: 1px solid white;
+      display: flex;
+      justify-content: space-between;
+}
+
+li button{
+      background: none;
+      border-style: none;
+      font-size: 2vh;
+      color: red;
+      cursor: default;
+}
+
+.footer{
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      padding: 0 3vh;
+      font-size: 1.5vh;
+      margin-bottom: 3vh;
+}
+
+.footer p{
+      margin: 0;
+      margin-top: 1vh;
+      text-align: center;
+      font-size: 1.4vh;
+      font-style: italic;
 }

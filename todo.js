@@ -38,7 +38,7 @@ function paintToDo(newTodo) {
       //웹브라우저 로딩 시에 한번만 생성된 상태가 되기 때문에 로컬에 만들고 이벤트 발생 시마다
       //버튼이 만들어지도록 해야한다.
       const button = document.createElement("button");
-      button.innerText="❌";
+      button.innerText="✔";
 
       li.appendChild(span);
       li.appendChild(button);

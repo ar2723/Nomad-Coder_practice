@@ -8,28 +8,38 @@
       <title>Momentum App</title>
 </head>
 <body>
-      <form class="hidden" id="login-form">
-            <input required maxlength = "15" type="text" placeholder="What is your name?">
-            <input type="submit" value="Log In">
-      </form>
-      <div id="weather">
-            <span></span>
-            <span></span>
-            <span></span>
-      </div>
-      <h2 id="clock"></h2>
+      <div class="container">
+            <div class="header">
+                  <div id="clock"></div>
+                  <div id="weather">
+                        <span></span>
+                        <span></span>
+                        <div></div>
+                  </div>
+            </div>
 
-      <h1 class="hidden" id="greeting"></h1>
-      <form id="todo-form">
-            <input type="text" placeholder="Write a To Do and Press Enter" required />
-      </form>
-      
-      <ul id="todo-list">
-      </ul>
-
-      <div id="quote">
-            <span></span><br>
-            <span></span>
+            <div class="content">
+                  <div>
+                        <form class="hidden" id="login-form">
+                              <input required maxlength = "15" type="text" placeholder="What is your name?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'What is your name?'">
+                              <input class="hidden" type="submit" value="Log In">
+                        </form>
+                        <h1 class="hidden" id="greeting"></h1>
+                  </div>
+                  <div>
+                        <form id="todo-form">
+                              <input type="text" placeholder="Write a To Do and Press Enter" required onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write a To Do and Press Enter'"/>
+                        </form>
+                  </div>
+                  <ul id="todo-list"></ul>
+            </div>
+            
+            <div class="footer">
+                  <div id="quote">
+                        <span></span>
+                        <p></p>
+                  </div>
+            </div>
       </div>
       
 <script src="greeting.js"></script>

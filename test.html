@@ -8,11 +8,11 @@
 </head>
 <body>
       <script>
-           function solution(array, height) {
-                  var answer = 0;
-                  let arr = [];
-                  array.filter(e => height < e).length
-
+            function solution(my_string, n) {
+                  var answer = '';
+                  for(let i=0; i<my_string.length; i++){
+                        answer += my_string.charAt(i) * n;
+                  }
                   return answer;
             }
       </script>
