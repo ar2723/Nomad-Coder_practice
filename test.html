@@ -8,12 +8,17 @@
 </head>
 <body>
       <script>
-           function solution(array, height) {
-                  var answer = 0;
-                  let arr = [];
-                  array.filter(e => height < e).length
-
-                  return answer;
+            function solution(num_list) {
+                  let oddSum = 0;
+                  let evenSum = 0;
+                  for(let i =0; i < num_list.length; i++){
+                        if(i%2==0){
+                              oddSum += num_list[i]
+                        } else if(i%2==1){
+                              evenSum += num_list[i]
+                        }
+                  }
+                  return oddSum > evenSum ? oddSum : evenSum
             }
       </script>
 </body>
