@@ -1,0 +1,32 @@
+.grid {
+     display:grid;
+     height: 50vh;
+     gap: 5px;
+     grid-template: 
+     [header-start] "header header header header" 1fr [header-end] 
+     [content-start] "content content content nav" 2fr [content-end]  
+     [footer-start] "footer footer footer footer" 1fr [footer-end] / 1fr 1fr 1fr 1fr
+     ;
+     
+}
+
+.header{
+     background-color: aqua;
+     grid-area: header;
+}
+
+.content{
+     background-color: bisque;
+     grid-area: content;
+}
+
+.nav{
+     background-color: blue;
+     grid-area: nav;
+
+}
+
+.footer{
+     background-color: brown;
+     grid-area: footer;
+}

@@ -37,12 +37,12 @@ const quotes = [
       }
 ]
 
-const quote = document.querySelector("#quote span:first-child")
-const author = document.querySelector("#quote span:last-child")
+const quote = document.querySelector("#quote span")
+const author = document.querySelector("#quote p")
 
 //Math.round(), Math.ceil(), Math.floor
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)]
 
 quote.innerText = todaysQuote.quote
-author.innerText = "- " + todaysQuote.author
+author.innerText = "- " + todaysQuote.author +" -"

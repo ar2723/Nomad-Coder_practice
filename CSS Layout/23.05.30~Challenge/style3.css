@@ -10,13 +10,13 @@ body {
 }
 
 div{
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Itim', cursive;
 }
 .container{
   height: 600px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 150px);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 .container > div:nth-child(1){
